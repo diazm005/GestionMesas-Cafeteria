@@ -21,6 +21,23 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#D9000000"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Bienvenido! que tengas un buen turno :)"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </LinearLayout>
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"

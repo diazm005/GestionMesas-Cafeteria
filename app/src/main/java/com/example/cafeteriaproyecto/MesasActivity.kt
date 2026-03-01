@@ -70,7 +70,7 @@ class MesasActivity : AppCompatActivity() {
 
             boton.setOnClickListener {
                 if (libre) {
-                    // Mesa libre → crear nuevo pedido
+                    // Mesa libre = crear nuevo pedido
                     val fecha    = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
                     val idPedido = db.crearPedido(idMesa = idMesa, idUsuario = 1, fecha = fecha)
                     db.actualizarMesa(idMesa = idMesa, estado = "ocupada", idPedido = idPedido)
